@@ -2,7 +2,7 @@
 """
 Created on Sat Jan 16 11:38:45 2021
 
-@author: lab607
+@author: Juanyam
 """
 
 ## Problem 1##
