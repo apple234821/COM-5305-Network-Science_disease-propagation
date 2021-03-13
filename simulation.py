@@ -51,10 +51,9 @@ gra_data=Graph.Adjacency(resource.tolist())            #transform format from ma
 
 Gx = nx.Graph(resource)
 
-##### Problem 1 (a) #####
+##### Data information #####
 num_v=gra_data.vcount()                                #caculated number of vertex
-#num_e=gra_data.ecount()/2                             #caculated number of edges
-num_e=Gx.number_of_edges()
+num_e=Gx.number_of_edges()                             #caculated number of edges
 mean_C=2*num_e/num_v                                   #caculated number of mean degree
 max_c=gra_data.maxdegree()/2                           #maximal degree
 g_dia=gra_data.diameter(directed=False)                #diameter
@@ -67,11 +66,10 @@ print('Diameter={0}'.format(g_dia))
 print('Average clustering cofficient={0}'.format(avg_clust_coff))
 
 
-##### Promblem 1(b) #####
+
 #save as png named graph
-#network_graph=ig.plot(gra_data,"graph.png",bbox=(0,0,600,600))
 network_graph=ig.plot(gra_data,"graph_10.png",bbox=(0,0,1000,1000))            #visiualize the grapgh in different frame(600,1000,5000) 
-#network_graph=ig.plot(gra_data,"graph_50.png",bbox=(0,0,5000,5000))
+
 
 
 ##### show the datasets distribution figure for log-log scale #####
